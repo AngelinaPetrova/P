@@ -1,0 +1,12 @@
+h1, h2{
+    color: seagreen;
+}
+header {
+    display: flex;
+}
+footer {
+    display: flex;
+}
+.value {
+    display: flex;
+}
