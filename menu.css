@@ -1,0 +1,13 @@
+*{
+    font-family: 'Prata', serif;
+    margin: 0;
+}
+/*header*/
+header{
+    display: flex;
+}
+/*main*/
+main{
+    background: #B8AA9F;
+    color:#141414;;
+}

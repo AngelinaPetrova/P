@@ -1,12 +1,28 @@
 *{
     font-family: 'Prata', serif;
+    margin: 0;
 }
 h1, h2{
     color: #141414;
 }
+/*header*/
 header {
     display: flex;
 }
+/*main*/
+.main{
+    display: flex;
+}
+.about{
+    background-color: rgb(235, 217, 204);
+}
+.menu{
+    background-color: #B8AA9F;
+}
+.ourreviews{
+    background: url(images/breads.jpg);
+}
+/*footer*/
 footer {
     display: flex;
 }
@@ -15,12 +31,11 @@ footer {
 }
 #reviews {
     color: white;
-    background: #b8aa9f;
 }
 #nav{
     text-decoration: none;
     color: var(--main-color)
 }
 @media (min-width: 769px) {
-    header ,header-nav
+    header ,header-nav;
 }
