@@ -1,13 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 *{
     font-family: 'Prata', serif;
     margin: 0;
 }
+:root {
+    --main-color: #141414;
+    font-family: 'Prata', serif;
+    --accent-color: white;
+    scroll-behavior: smooth;
+}
+
+
+
+header .logo {
+    width: 216px;
+    height: auto;
+}
+header .menu-items{
+    flex: 1; 
+    justify-content: space-around;
+    display: none;
+}
+header .menu-items a {
+    display: block;
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+header .menu-items a:hover {
+    border: 1px solid var(--main-color);
+}
+/*buger-menu*/
+#burger-checkbox{
+    display: none;
+}
+
+.header-nav input:checked  ~ .menu-items{
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .burger-icon{
+        display: none;
+    }
+    header .header-nav{
+        display: flex;
+    }
+    header #burger-checkbox ~ .menu-items {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
 h1, h2{
     color: #141414;
-}
-/*header*/
-header {
-    display: flex;
 }
 /*main*/
 .main{
