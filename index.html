@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav class="header-nav">
-            <img class="logo logo-last" src="images/logo.png" alt="Panetteira Logo">
+            <img class="logo logo-last" src="images/logo.jpg" alt="Panetteira Logo">
             <label class="burger-icon" for="burger-checkbox">☰</label>
             <input type="checkbox" id="burger-checkbox">
             <div class="menu-items">
@@ -26,7 +26,8 @@
         <div class="main"> <!--main-->
             <div class="header-section">
                 <span>Natural yeastless bread</span>
-                <p>We take care of your health, so we bake bread with sourdough, which we prepare on our own, using only natural ingredients.</p>
+                <p>We take care of your health, so we bake bread with sourdough, which we prepare on our own,</p> 
+                <p id="line">using only natural ingredients.</p>
             </div>
             <div class="product-list">
                 <img class="main-photo" src="images/bread1.jpg" alt="Bread">
@@ -37,9 +38,13 @@
     </main>  
         <section class="about"> <!--about-->
             <div class="about-div">
-                <img class="photo-section-about" src="images/bread4.jpg" alt="Hands with bread">
-                <span>About Panetteira</span>
-                <p>Panetteria is one of the first artisanal bakeries in Ukraine. We use only wholemeal granular flour, a mixture of whole grain flour and coarse-ground flour, as well as whole grain flour to make our bread. Each loaf is formed manually.</p>
+                <div class="side-about-left">   
+                    <img class="photo-section-about" src="images/bread4.jpg" alt="Hands with bread">
+                </div>
+                <div class="side-about-right">
+                    <span>About Panetteira</span>
+                    <p>Panetteria is one of the first artisanal bakeries in Ukraine. We use only wholemeal granular flour, a mixture of whole grain flour and coarse-ground flour, as well as whole grain flour to make our bread. Each loaf is formed manually.</p>
+                </div>
             </div>
         </section>
         <section class="menu"> <!--menu-->
@@ -69,25 +74,25 @@
         <p>It was fantastic</p>
       </section>
       <section class="citation-section"> <!--citation-->
-        <hr>
+        <hr><img src="images/logo-icon.png" alt=""><hr>
         <span>Your morning should begin with "Panetteria"</span>
         <p>On our shelves you can find the freshest and the most nutritious food. This is a kind of breakfast, lunch, and dinner everyone should have - delicious, natural and healthy.</p>
         <hr>
       </section>
     </main>
     <footer>
-      <div>
-        <img class="logo-footer" src="images/logo.png" alt="Logo">
-      </div>
-      <div>
-        <h2>Call us</h2>
-        <p>+38 (067) 731 20 95</p>
-        <p>+38 (093) 528 61 75</p>
-        <p>+38 (050) 523 52 21</p>
-      </div>
-      <div>
-        <h2>Follow us</h2>
-      </div>
+        <div>
+            <img class="logo-footer" src="images/logo.jpg" alt="Logo">
+        </div>
+        <div>
+            <span>Call us</span>
+            <p class="footer-p">+38 (067) 731 20 95</p>
+            <p class="footer-p">+38 (093) 528 61 75</p>
+            <p class="footer-p">+38 (050) 523 52 21</p>
+        </div>
+        <div>
+            <span>Follow us</span>
+        </div>
     </footer>
 </body>
 </html>
