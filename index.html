@@ -10,56 +10,67 @@
 </head>
 <body>
     <header>
-      <nav class="header-nav">
-        <img class="logo" src="images/logo.png" alt="Panetteira Logo">
-        <label class="burger-icon" for="burger-checkbox">☰</label>
-        <input type="checkbox" id="burger-checkbox">
-        <div class="menu-items">
-            <a href="index.html">Home</a>
-            <a href="ourstory.html">Our story</a>
-            <a href="menu.html">Menu</a>
-            <a href="contacts.html">Contacts</a>
-        </div>
-      </nav>
+        <nav class="header-nav">
+            <img class="logo logo-last" src="images/logo.png" alt="Panetteira Logo">
+            <label class="burger-icon" for="burger-checkbox">☰</label>
+            <input type="checkbox" id="burger-checkbox">
+            <div class="menu-items">
+                <a href="index.html">Home</a>
+                <a href="ourstory.html">Our story</a>
+                <a href="menu.html">Menu</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+        </nav>
     </header>
     <main>
-      <div> <!--main-->
-        <h2>Natural yeastless bread</h2>
-        <p>We take care of your health, so we bake bread with sourdough, which we prepare on our own, using only natural ingredients.</p>
-        <div class="main">
-        <img src="images/bread1.jpg" alt="Bread">
-        <img src="images/bread2.jpg" alt="Bread">
-        <img src="images/bread3.jpg" alt="Bread">
-        </main>
-      </div>  
-      <section class="about"> <!--about-->
-        <img src="images/bread4.jpg" alt="Hands with bread">
-        <h2>About Panetteira</h2>
-        <p>Panetteria is one of the first artisanal bakeries in Ukraine. We use only wholemeal granular flour, a mixture of whole grain flour and coarse-ground flour, as well as whole grain flour to make our bread. Each loaf is formed manually.</p>
-      </section>
-      <section class="menu"> <!--menu-->
-        <h2>Our Menu</h2>
-        <p>We are proud to offer you our menu with a variety of dishes to meet any taste. Be you a vegetarian or a meat lover, we always have something special for you!</p>
-        <button>Download menu</button>
-      </section>  
-      <section> <!-- value-->
-        <h2>The freshest and the most nutritious food for you.</h2>
-        <div class="value">
-          <h3>Artisanal bread</h3>
-          <p>Each loaf of bread is formed manually. It is one of the hallmarks of the true artisanal bread.</p>
-          <h3>No yeast</h3>
-          <p>We do not use yeast, so our bread is useful for the daily meals of your children.</p>
-          <h3>Natural sourdough</h3>
-          <p>Natural ferments enrich the body with all necessary organic acids, vitamins, minerals, enzymes, fiber, and pectic substances.</p>
+        <div class="main"> <!--main-->
+            <div class="header-section">
+                <span>Natural yeastless bread</span>
+                <p>We take care of your health, so we bake bread with sourdough, which we prepare on our own, using only natural ingredients.</p>
+            </div>
+            <div class="product-list">
+                <img class="main-photo" src="images/bread1.jpg" alt="Bread">
+                <img class="main-photo" src="images/bread2.jpg" alt="Bread">
+                <img class="main-photo" src="images/bread3.jpg" alt="Bread">
+            </div>
+        </div>
+    </main>  
+        <section class="about"> <!--about-->
+            <div class="about-div">
+                <img class="photo-section-about" src="images/bread4.jpg" alt="Hands with bread">
+                <span>About Panetteira</span>
+                <p>Panetteria is one of the first artisanal bakeries in Ukraine. We use only wholemeal granular flour, a mixture of whole grain flour and coarse-ground flour, as well as whole grain flour to make our bread. Each loaf is formed manually.</p>
+            </div>
+        </section>
+        <section class="menu"> <!--menu-->
+            <div class="menu-div">
+                <span>Our Menu</span>
+                <p>We are proud to offer you our menu with a variety of dishes to meet any taste. Be you a vegetarian or a meat lover, we always have something special for you!</p>
+                <button class="button-menu">Download menu</button>
+            </div>
+        </section>  
+      <section class="value"> <!-- value-->
+        <span id="value-header">The freshest and the most nutritious food for you.</span>
+        <div class="value-div">
+            <span>Artisanal bread</span>
+            <p>Each loaf of bread is formed manually. It is one of the hallmarks of the true artisanal bread.</p>
+        </div>
+        <div class="value-div">
+            <span>No yeast</span>
+            <p>We do not use yeast, so our bread is useful for the daily meals of your children.</p>
+        </div>
+        <div class="value-div">
+            <span>Natural sourdough</span>
+            <p>Natural ferments enrich the body with all necessary organic acids, vitamins, minerals, enzymes, fiber, and pectic substances.</p>
         </div>
       </section>
       <section class="ourreviews"> <!--reviews-->
         <h2 id="reviews">Our customers' feedback</h2>
         <p>It was fantastic</p>
       </section>
-      <section> <!--citation-->
+      <section class="citation-section"> <!--citation-->
         <hr>
-        <h3>Your morning should begin with "Panetteria"</h3>
+        <span>Your morning should begin with "Panetteria"</span>
         <p>On our shelves you can find the freshest and the most nutritious food. This is a kind of breakfast, lunch, and dinner everyone should have - delicious, natural and healthy.</p>
         <hr>
       </section>
@@ -77,6 +88,6 @@
       <div>
         <h2>Follow us</h2>
       </div>
-    </footer> -->
+    </footer>
 </body>
 </html>

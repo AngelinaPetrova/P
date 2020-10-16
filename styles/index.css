@@ -1,25 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-*{
-    font-family: 'Prata', serif;
-    margin: 0;
-}
+
 :root {
     --main-color: #141414;
     font-family: 'Prata', serif;
     --accent-color: white;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
+}
+body{
+    margin: auto;
+    max-width: 980px;
 }
 
-
-
-header .logo {
+.logo {
+    max-width: 100%;
     width: 216px;
-    height: auto;
+    height: 52px;
+    text-align: center;
 }
 header .menu-items{
     flex: 1; 
-    justify-content: space-around;
+    justify-content: flex-end;
     display: none;
+    font-family: 'Open Sans', sans-serif;
 }
 header .menu-items a {
     display: block;
@@ -52,38 +54,160 @@ header .menu-items a:hover {
         align-items: center;
     }
 }
-
-
-h1, h2{
-    color: #141414;
-}
-/*main*/
 .main{
-    display: flex;
+    background: white;
+    margin: 30px 0 0;
+    padding: 0 15px;
 }
-.about{
+.header-section span{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.header-section p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.main-photo{
+    width: 100%;
+    position: relative;
+    min-width: 290px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    
+}
+@media (min-width: 540px){
+     .product-list{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 5px;
+     }
+ }
+  @media (min-width: 660px){
+     .product-list{
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+  }
+    @media (min-width: 980px){
+     .product-list{
+         grid-template-columns: repeat(4, 1fr);
+     }
+  }
+
+.about-div{
+    height: auto;
+    margin:0;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
     background-color: rgb(235, 217, 204);
+  }
+.about-div span{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+.about-div p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+.photo-section-about{
+    width: 100%;
+    min-width: 272px;
+    min-height: 131px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 40px;
 }
 .menu{
     background-color: #B8AA9F;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.ourreviews{
-    background: url(images/breads.jpg);
+.menu-div span{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+.menu-div p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-/*footer*/
+.menu-button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#value-header{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.value-div{
+    display: block;
+}
+.value-div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.value-div p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+@media (min-width: 790px){
+     .value-div{
+         display: grid;
+         grid-template-rows: 1fr 1fr;
+         grid-gap: 5px;
+     }
+}
+  @media (min-width: 980px){
+     .value-div{
+         grid-template-rows: 1fr 1fr 1fr;
+     }
+}
+.value{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+}
+.citation-section span{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.citation-section p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#value-header{
+    margin-bottom: 40px; 
+}
 footer {
     display: flex;
-}
-.value {
-    display: flex;
-}
-#reviews {
-    color: white;
-}
-#nav{
-    text-decoration: none;
-    color: var(--main-color)
-}
-@media (min-width: 769px) {
-    header ,header-nav;
+
 }
